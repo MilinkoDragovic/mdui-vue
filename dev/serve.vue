@@ -18,5 +18,6 @@ export default defineComponent({
 <template>
   <div id="app">
     <md-input-text v-model="username" />
+      <md-button></md-button>
   </div>
 </template>

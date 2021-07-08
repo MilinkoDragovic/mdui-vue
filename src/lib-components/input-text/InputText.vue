@@ -19,9 +19,8 @@ export default defineComponent({
         }
     },
     methods: {
-        onInputChange(event: any) {
-            const target = (<HTMLInputElement>event.target);
-            this.$emit("update:modelValue", target.value);
+        onInputChange(event: any): void {
+            this.$emit("update:modelValue", (event.target as HTMLInputElement).value);
         }
     },
     computed: {
@@ -32,7 +31,7 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .md-input-text {
     margin: 0;
     padding: .5rem .5rem;
