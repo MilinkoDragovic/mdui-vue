@@ -1,7 +1,7 @@
 export default class Helper {
 
     /** Get Height of element **/
-    static getHeight(element: HTMLElement): number {
+    static getElementHeight(element: HTMLElement): number {
         let elementHeight: number = element.offsetHeight,
             style: CSSStyleDeclaration = getComputedStyle(element);
 
@@ -12,7 +12,7 @@ export default class Helper {
     }
 
     /** Get Width of element **/
-    static getWidth(element: HTMLElement): number {
+    static getElementWidth(element: HTMLElement): number {
         let elementWidth: number = element.offsetWidth,
             style: CSSStyleDeclaration = getComputedStyle(element);
 
@@ -43,7 +43,7 @@ export default class Helper {
     }
 
     /** Get element outer width **/
-    static getElementOuterWidth(element: HTMLElement, margin: CSSStyleDeclaration): number {
+    static getElementOuterWidth(element: HTMLElement, margin?: Partial<CSSStyleDeclaration>): number {
         if (element) {
             let elementWidth: number = element.offsetWidth;
 
@@ -59,7 +59,7 @@ export default class Helper {
     }
 
     /** Get element outer height **/
-    static getElementOuterHeight(element: HTMLElement, margin: CSSStyleDeclaration): number {
+    static getElementOuterHeight(element: HTMLElement, margin?: CSSStyleDeclaration): number {
         if (element) {
             let elementHeight = element.offsetHeight;
 
