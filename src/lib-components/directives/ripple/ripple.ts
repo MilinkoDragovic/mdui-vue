@@ -2,7 +2,6 @@ import { ObjectDirective } from 'vue';
 import Helper from '../../utils/helper';
 
 function onMouseDown(event: MouseEvent) {
-    console.log(event.currentTarget);
     let target = event.currentTarget as any;
     let ink = getInk(target);
     if (!ink || getComputedStyle(ink, null).display === 'none') {
@@ -65,9 +64,8 @@ function onAnimationEnd(event: Event) {
 }
 
 const Ripple: ObjectDirective = {
-    mounted(element, binding) {
+    mounted(element) {
         create(element);
-        console.log(binding);
         bindEvents(element);
     },
     unmounted(element: HTMLElement) {

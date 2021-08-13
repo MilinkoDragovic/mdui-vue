@@ -12,7 +12,7 @@
 <script lang="ts">
 import {defineComponent} from "vue";
 import ButtonClassInterface  from "./Button";
-import Ripple from '../directives/ripple/ripple';
+import Ripple from "../directives/ripple/ripple";
 
 export default defineComponent({
     name: "MdButton",
