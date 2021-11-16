@@ -5,7 +5,7 @@
     "url": "https://www.npmjs.com/~kimydrago"
   },
   "name": "mdui-vue",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/mdui.ssr.js",
   "browser": "dist/mdui.esm.js",

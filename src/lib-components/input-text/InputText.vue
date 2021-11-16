@@ -24,7 +24,7 @@ export default defineComponent({
         }
     },
     computed: {
-        isInputFilled(): any {
+        isInputFilled(): boolean {
             return this.modelValue !== null && this.modelValue.toString().length > 0
         }
     }
